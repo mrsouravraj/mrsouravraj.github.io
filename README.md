@@ -44,7 +44,7 @@ On this Mac, Python's local certificate trust store could not validate Medium. T
 
 - `index.html`: profile, work, projects, timeline, skills, contact, and metadata.
 - `styles.css`: responsive violet theme; no external fonts or trackers.
-- `main.js`: mobile navigation, project filtering, request-recovery demonstration, and active navigation.
+- `main.js`: mobile navigation, project filtering, portrait interaction, and active navigation.
 - `data/articles.json`: checked-in article fallback. Render after editing it with `--offline`.
 - `scripts/update_medium.py`: feed importer and static article renderer.
 - `assets/`: public résumé, favicon, and social image.
@@ -52,8 +52,8 @@ On this Mac, Python's local certificate trust store could not validate Medium. T
 
 Do not hand-edit the HTML between the `ARTICLES` markers; the importer owns that section. If the domain changes, update canonical, Open Graph, structured data, sitemap, and robots URLs.
 
-The request trace and architecture illustrations are conceptual teaching examples. Professional work is summarized without internal metrics or customer names. The public résumé is the user-selected `downloads/Sourav_Chourasia_Backend_Applied_AI_CV.pdf`, copied unchanged to `assets/Sourav-Chourasia-Resume-Public.pdf` so both résumé links retain their existing URL.
+Architecture illustrations are conceptual teaching examples. Professional work is summarized without internal metrics or customer names. The public résumé is the user-selected `downloads/Sourav_Chourasia_Backend_Applied_AI_CV (1).pdf`, copied unchanged to `assets/Sourav-Chourasia-Resume-Public.pdf` so both résumé links retain their existing URL.
 
 ## Validation performed
 
-Chromium checks at 320, 390, 768, 1024, and 1440 pixels: no horizontal overflow, project filtering, mobile menu and Escape handling, and no JavaScript runtime errors. Also checked request recovery, reduced-motion behavior, résumé access, no-JavaScript content, and direct-file loading. The RSS importer was exercised with the actual Medium feed and offline/error cases.
+Chromium checks at 320, 390, 768, 1024, and 1440 pixels: no horizontal overflow, project filtering, mobile menu and Escape handling, and no JavaScript runtime errors. Also checked reduced-motion behavior, résumé access, no-JavaScript content, and direct-file loading. The RSS importer was exercised with the actual Medium feed and offline/error cases.

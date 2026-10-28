@@ -45,34 +45,62 @@ filters.forEach(button => button.addEventListener('click', () => {
   document.querySelector('#project-count').textContent = `${count} ${count === 1 ? 'project' : 'projects'}`;
 }));
 
-const traceButton = document.querySelector('#trace-button');
-const traceStatus = document.querySelector('#trace-status');
-const nodes = document.querySelectorAll('[data-node]');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const steps = [
-  ['api', '01 / API validates the request and its identity.'],
-  ['queue', '02 / Queue accepts the work for asynchronous processing.'],
-  ['worker', '03 / Worker times out. The request is not lost.'],
-  ['retry', '04 / Retry with backoff and the same idempotency key.'],
-  ['rules', '05 / Validate the result against explicit rules.'],
-  ['store', '06 / Persist once. Acknowledge. Request recovered.']
-];
-traceButton.addEventListener('click', async () => {
-  traceButton.disabled = true;
-  if (reducedMotion.matches) {
-    nodes.forEach(node => node.classList.add('is-active'));
-    traceStatus.textContent = 'API → queue → timeout → retry → validate → persist once. Recovered.';
-  } else {
-    for (const [active, message] of steps) {
-      nodes.forEach(node => node.classList.toggle('is-active', node.dataset.node === active));
-      traceStatus.textContent = message;
-      await new Promise(resolve => setTimeout(resolve, 850));
-    }
-  }
-  traceButton.disabled = false;
-  traceButton.innerHTML = 'Run again <span aria-hidden="true">↗</span>';
-});
+const revealTargets = document.querySelectorAll(
+  '.featured-work, .work-grid .work-card, .stack-card, .project-grid .project-card, .timeline-row, .article-row'
+);
+let revealObserver;
 
+function updateRevealMotion() {
+  if (revealObserver) revealObserver.disconnect();
+  document.body.classList.remove('motion-ready');
+  revealTargets.forEach(target => {
+    target.classList.remove('scroll-reveal', 'is-visible');
+    target.style.removeProperty('--reveal-delay');
+  });
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) return;
+
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -48px 0px', threshold: 0.08 });
+
+  revealTargets.forEach((target, index) => {
+    target.classList.add('scroll-reveal');
+    target.style.setProperty('--reveal-delay', `${(index % 4) * 70}ms`);
+    revealObserver.observe(target);
+  });
+  document.body.classList.add('motion-ready');
+}
+
+updateRevealMotion();
+reducedMotion.addEventListener('change', updateRevealMotion);
+const portrait = document.querySelector('.hero-portrait');
+if (portrait && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  glow.setAttribute('aria-hidden', 'true');
+  document.body.append(glow);
+  document.addEventListener('pointermove', event => {
+    if (reducedMotion.matches) return;
+    glow.style.setProperty('--cursor-x', `${event.clientX}px`);
+    glow.style.setProperty('--cursor-y', `${event.clientY}px`);
+  }, { passive: true });
+  portrait.addEventListener('pointermove', event => {
+    if (reducedMotion.matches) return;
+    const rect = portrait.getBoundingClientRect();
+    portrait.style.setProperty('--tilt-x', `${((event.clientY - rect.top) / rect.height - .5) * -5}deg`);
+    portrait.style.setProperty('--tilt-y', `${((event.clientX - rect.left) / rect.width - .5) * 5}deg`);
+  }, { passive: true });
+  portrait.addEventListener('pointerleave', () => {
+    portrait.style.removeProperty('--tilt-x');
+    portrait.style.removeProperty('--tilt-y');
+  });
+}
 if ('IntersectionObserver' in window) {
   const sectionLinks = Array.from(navigation.querySelectorAll('a'));
   const sectionObserver = new IntersectionObserver(entries => {
