@@ -1,0 +1,42 @@
+{
+  "updated_at": "2026-10-27T12:59:37+00:00",
+  "source": "https://medium.com/feed/@mr.sourav.raj",
+  "items": [
+    {
+      "title": "From 77 Writes to One Million Events per Second: My SQLite Speed Experiment",
+      "url": "https://blog.stackademic.com/from-77-writes-to-one-million-events-per-second-my-sqlite-speed-experiment-fc802b2eaee0?source=rss-d2600d066eef------2",
+      "date": "2026-10-24",
+      "description": "Software Engineering · Performance Optimization · Sqlite"
+    },
+    {
+      "title": "Your Payment Succeeded. So Why Does One Service Think It Failed?",
+      "url": "https://blog.stackademic.com/your-payment-succeeded-so-why-does-one-service-think-it-failed-434e572ef0e0?source=rss-d2600d066eef------2",
+      "date": "2026-10-19",
+      "description": "Payments · Financial System · Lamport Timestamps"
+    },
+    {
+      "title": "Beyond Vector Search: How to Build RAG Systems That Actually Work in Production",
+      "url": "https://ai.plainenglish.io/beyond-vector-search-how-to-build-rag-systems-that-actually-work-in-production-2113b46436df?source=rss-d2600d066eef------2",
+      "date": "2026-09-01",
+      "description": "Generative Ai Use Cases · Llm · Artificial Intelligence"
+    },
+    {
+      "title": "How I Stopped Burning Claude Tokens: A Developer’s Field Report Using Headroom with Claude Code",
+      "url": "https://ai.plainenglish.io/how-i-stopped-burning-claude-tokens-a-developers-field-report-using-headroom-with-claude-code-6cccbbf135e5?source=rss-d2600d066eef------2",
+      "date": "2026-07-19",
+      "description": "Productivity · Claude Code · Programming"
+    },
+    {
+      "title": "From Senior Engineer to AI Conductor: How the Role Actually Changes",
+      "url": "https://blog.stackademic.com/from-senior-engineer-to-ai-conductor-how-the-role-actually-changes-083052e7c842?source=rss-d2600d066eef------2",
+      "date": "2026-03-20",
+      "description": "Ai For Developers · Ai Coding · Developer Tools"
+    },
+    {
+      "title": "Kiro vs Cursor vs Antigravity vs Claude Code: Which AI IDE Belongs in Your Workflow?",
+      "url": "https://blog.stackademic.com/kiro-vs-cursor-vs-antigravity-vs-claude-code-which-ai-ide-belongs-in-your-workflow-f670d3d6ef89?source=rss-d2600d066eef------2",
+      "date": "2026-03-14",
+      "description": "Developer Tools · Ai Tools · Software Engineering"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mrsouravraj.github.io/sitemap.xml

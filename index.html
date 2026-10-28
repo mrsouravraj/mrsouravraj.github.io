@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e0c15">
+  <title>Sourav Chourasia — Backend & AI Engineer</title>
+  <meta name="description" content="Sourav Chourasia is a backend and AI engineer in Abu Dhabi. Explore his work in distributed systems, production AI, and open-source engineering.">
+  <link rel="canonical" href="https://mrsouravraj.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrsouravraj.github.io/">
+  <meta property="og:title" content="Sourav Chourasia — Backend & AI Engineer">
+  <meta property="og:description" content="Complex systems. Clear thinking. Engineering for the real world.">
+  <meta property="og:image" content="https://mrsouravraj.github.io/assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sourav Chourasia","jobTitle":"Backend & AI Engineer","url":"https://mrsouravraj.github.io/","sameAs":["https://github.com/mrsouravraj","https://www.linkedin.com/in/souravchaurasia/","https://medium.com/@mr.sourav.raj"]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#home" aria-label="Sourav Chourasia, home"><span class="brand-icon" aria-hidden="true">&lt;/&gt;</span><span>Sourav Chourasia<span class="brand-period">.</span></span></a>
+    <nav id="main-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#writing">Writing</a><a href="#about">About</a></nav>
+    <a class="header-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+  </div>
+</header>
+<main id="main">
+  <section class="hero wrap" id="home" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> BACKEND & AI ENGINEER <span class="eyebrow-divider">/</span> ABU DHABI, UAE</p>
+      <h1 id="hero-title">Complex systems.<br>Clear thinking.<br><span class="gradient-text">Real-world impact.</span></h1>
+      <p class="hero-description">I’m Sourav. I build the backends that keep things moving, and the AI workflows that make them smarter.</p>
+      <p class="hero-detail">From healthcare integrations to distributed systems — I care about what happens <em>after</em> the happy path.</p>
+      <div class="hero-actions"><a class="button primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="button secondary" href="assets/Sourav-Chourasia-Resume-Public.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-socials"><a href="https://github.com/mrsouravraj" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/souravchaurasia/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://medium.com/@mr.sourav.raj" target="_blank" rel="noopener">Medium ↗</a><span class="social-rule"></span><span>Always building. Always learning.</span></div>
+    </div>
+    <div class="system-card">
+      <div class="system-top"><span><span class="mini-dot"></span> INSIDE THE SYSTEM</span><span>01 / REQUEST LIFECYCLE</span></div>
+      <div class="system-heading"><span>Good systems have a plan B.</span><span class="diagram-label">INTERACTIVE EXPLAINER</span></div>
+      <div class="system-map">
+        <svg viewBox="0 0 500 290" role="img" aria-label="Illustrative request flow from API to queue to workers and database, with a retry path">
+          <defs><linearGradient id="line-gradient"><stop stop-color="#8c69e1"/><stop offset="1" stop-color="#d3b2ff"/></linearGradient></defs>
+          <path class="map-path" d="M80 143H458M250 143V62H375V143M250 143V236H375V143"/>
+          <path class="map-live" d="M80 143H458"/>
+          <path class="retry-path" d="M250 143V236H375V143"/>
+          <g class="map-node" data-node="api"><rect x="21" y="110" width="102" height="68" rx="12"/><text class="map-icon" x="72" y="138">{ }</text><text x="72" y="161">API</text></g>
+          <g class="map-node" data-node="queue"><rect x="159" y="110" width="102" height="68" rx="12"/><text class="map-icon" x="210" y="138">≋</text><text x="210" y="161">QUEUE</text></g>
+          <g class="map-node" data-node="worker"><rect x="299" y="110" width="102" height="68" rx="12"/><text class="map-icon" x="350" y="138">⌘</text><text x="350" y="161">WORKER</text></g>
+          <g class="map-node" data-node="store"><rect x="432" y="110" width="53" height="68" rx="12"/><text class="map-icon" x="458" y="138">▤</text><text x="458" y="161">DB</text></g>
+          <g class="map-node sub-node" data-node="rules"><rect x="272" y="29" width="104" height="57" rx="10"/><text x="324" y="53">AI / RULES</text><text class="node-subtitle" x="324" y="72">validate output</text></g>
+          <g class="map-node sub-node" data-node="retry"><rect x="272" y="210" width="104" height="55" rx="10"/><text x="324" y="234">RETRY</text><text class="node-subtitle" x="324" y="252">recover safely</text></g>
+          <circle class="map-point" cx="140" cy="143" r="3"/><circle class="map-point" cx="280" cy="143" r="3"/><circle class="map-point" cx="416" cy="143" r="3"/>
+        </svg>
+      </div>
+      <div class="trace-console" aria-live="polite" aria-atomic="true"><span class="console-prompt">›</span><span id="trace-status">Ready. Follow a request through the system.</span><span class="console-cursor" aria-hidden="true">_</span></div>
+      <div class="system-controls"><span>DESIGNED FOR THE UNEXPECTED.</span><button id="trace-button" type="button">Run a request <span aria-hidden="true">↗</span></button></div>
+      <div class="system-caption"><span class="tiny-cross">+</span> A conceptual model. A production mindset.</div>
+    </div>
+    <div class="hero-bottom"><a href="#work"><span class="scroll-icon">↓</span> A FEW THINGS I’VE BUILT</a><span>THOUGHTFUL ARCHITECTURE. BORINGLY RELIABLE SOFTWARE.</span></div>
+  </section>
+  <div class="credibility"><div class="wrap credibility-inner"><div><strong>6+</strong><span>years building<br>production systems</span></div><div><strong>Innovaccer</strong><span>healthcare platforms<br>& applied AI</span></div><div><strong>Delhivery</strong><span>logistics, payments<br>& event-driven systems</span></div><div><strong>Build. Learn. Share.</strong><span>open-source experiments<br>& technical writing</span></div></div></div>
+
+  <section class="section wrap" id="work" aria-labelledby="work-title">
+    <div class="section-header"><div><p class="eyebrow section-kicker">01 <span>/</span> ENGINEERING IN PRACTICE</p><h2 id="work-title">Built for the <em>real world.</em></h2></div><p>Systems where reliability matters,<br>trade-offs are real, and the work goes deep.</p></div>
+    <article class="featured-work">
+      <div class="featured-copy"><p class="label"><span class="mini-dot"></span> BACKEND ENGINEERING · HEALTHCARE</p><h3>Behind every smooth experience<br>is a system that handles the mess.</h3><p>At Innovaccer, I build backend services and integrations for complex healthcare workflows — connecting systems, coordinating asynchronous work, and making failures recoverable.</p><div class="work-outcomes"><div><span>01</span><p><strong>Clear service boundaries</strong>Configurable FHIR services with clean architecture and explicit contracts.</p></div><div><span>02</span><p><strong>Resilience by design</strong>Idempotent processing, dead-letter queues, and distributed locks to coordinate ordered work and recovery.</p></div><div><span>03</span><p><strong>Performance with evidence</strong>Benchmarking and runtime tuning, carried through tested rollouts and automated deployment configuration.</p></div></div><div class="tags"><span>Python</span><span>FHIR / EHR</span><span>Kafka</span><span>Kubernetes</span></div></div>
+      <div class="work-diagram" aria-label="Conceptual integration design"><div class="diagram-title">INTEGRATION, WITHOUT THE GUESSWORK <span>↗</span></div><div class="integration-stack"><div class="integration-source"><span>External APIs</span><span>Webhooks</span><span>Events</span></div><div class="stack-connector">↓</div><div class="integration-core"><span class="core-icon">{ }</span><strong>One clear contract.</strong><span>Validate · Normalize · Route</span></div><div class="stack-connector">↓</div><div class="integration-source bottom"><span>Process</span><span>Persist</span><span>Observe</span></div><div class="recovery-line"><span>↳</span> Retry safely. Reconcile deliberately.</div></div><p>ILLUSTRATIVE PATTERN / NOT A PRODUCTION DIAGRAM</p></div>
+    </article>
+    <div class="work-grid">
+      <article class="work-card"><div class="work-card-top"><span class="icon-box">◎</span><span class="label">APPLIED AI</span><span class="card-number">02</span></div><h3>Automation that knows<br>when to ask a human.</h3><p>Contributed to document-intake workflows combining extraction, tool-assisted matching, and confidence checks. Uncertain matches go to human review.</p><div class="mini-flow"><span>Extract</span><i>→</i><span>Match</span><i>→</i><span class="accent-pill">Verify</span></div><div class="tags"><span>Tool calling</span><span>OCR</span><span>Human review</span></div></article>
+      <article class="work-card"><div class="work-card-top"><span class="icon-box">⌘</span><span class="label">DEVELOPER EXPERIENCE</span><span class="card-number">03</span></div><h3>Better tools for the people<br>building the software.</h3><p>Built an internal AI coding assistant with IDE integrations. Led knowledge-sharing sessions on context-aware AI workflows, reusable prompting practices, and review and testing guardrails to help engineers adopt AI tools thoughtfully.</p><div class="mini-terminal"><span>›</span> context loaded <span class="terminal-divider">/</span> <span class="terminal-ready">ready to assist_</span></div><div class="tags"><span>LLM APIs</span><span>IDE extensions</span><span>Team enablement</span></div></article>
+      <article class="work-card case-study" aria-labelledby="modernization-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">↻</span><span class="label">PLATFORM MODERNIZATION</span><span class="card-number">04</span></div>
+        <h3 id="modernization-title">Turn the bottleneck<br>into a better foundation.</h3>
+        <dl class="case-details">
+          <div><dt>THE CHALLENGE</dt><dd>A legacy backend had accumulated rigid data models and expensive query paths, creating slow responses and operational strain.</dd></div>
+          <div><dt>WHAT I LED</dt><dd>Led the backend redesign, rebuilt data models and query paths, and introduced an asynchronous foundation. Paired application changes with deployment resource tuning.</dd></div>
+          <div><dt>THE OUTCOME</dt><dd>Faster responses, lower infrastructure requirements, and a more maintainable foundation for subsequent development.</dd></div>
+        </dl>
+        <div class="tags"><span>Data modeling</span><span>Async architecture</span><span>Resource efficiency</span></div>
+      </article>
+      <article class="work-card case-study" aria-labelledby="extensibility-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">{ }</span><span class="label">EXTENSIBLE SYSTEMS</span><span class="card-number">05</span></div>
+        <h3 id="extensibility-title">Make the next change<br>easier to deliver.</h3>
+        <dl class="case-details">
+          <div><dt>THE CHALLENGE</dt><dd>Recurring customization requests required coordinated engineering and testing effort, leaving useful changes waiting in the backlog.</dd></div>
+          <div><dt>WHAT I LED</dt><dd>Led architecture and delivery of a configuration-driven approach that made common variations reusable, with attention to performance, edge cases, and rollout readiness.</dd></div>
+          <div><dt>THE OUTCOME</dt><dd>Less repeated implementation work, faster delivery of deferred requests, and smoother team continuity through proactive dependency resolution and handoffs.</dd></div>
+        </dl>
+        <div class="tags"><span>Configuration-driven design</span><span>Extensibility</span><span>Delivery ownership</span></div>
+      </article>
+      <article class="work-card" aria-labelledby="reliability-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">◉</span><span class="label">SHARED PLATFORM RELIABILITY</span><span class="card-number">06</span></div>
+        <h3 id="reliability-title">Make the health signal<br>worth trusting.</h3>
+        <p>Improved shared liveness and readiness checks to reduce probe overhead and unnecessary restarts. Built engineering dashboards for performance and failure visibility, with health-check improvements adopted by other teams.</p>
+        <div class="mini-flow" aria-hidden="true"><span>Probe</span><i>→</i><span>Observe</span><i>→</i><span class="accent-pill">Respond</span></div>
+        <div class="tags"><span>Health checks</span><span>Observability</span><span>Cross-team adoption</span></div>
+      </article>
+      <article class="work-card" aria-labelledby="standards-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">≡</span><span class="label">ENGINEERING STANDARDS</span><span class="card-number">07</span></div>
+        <h3 id="standards-title">Keep the code and<br>its promises in sync.</h3>
+        <p>Led API documentation standardization with code-generated OpenAPI specifications and developer walkthroughs. Introduced pipeline linting and improved coverage checks, and led dependency upgrades to address vulnerabilities with minimal disruption.</p>
+        <div class="mini-flow" aria-hidden="true"><span>Specify</span><i>→</i><span>Check</span><i>→</i><span class="accent-pill">Release</span></div>
+        <div class="tags"><span>OpenAPI</span><span>CI quality checks</span><span>Dependency upgrades</span></div>
+      </article>
+    </div>
+    <div class="work-grid">
+      <article class="work-card case-study" aria-labelledby="logistics-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">⇢</span><span class="label">LOGISTICS ORCHESTRATION</span><span class="card-number">08</span></div>
+        <h3 id="logistics-title">One trip. Many moving parts.<br>A clear state for each.</h3>
+        <dl class="case-details">
+          <div><dt>THE CHALLENGE</dt><dd>A freight marketplace needed to coordinate customer requests, vendor bids, dispatch, delivery, and settlement across a largely manual operation. Operations teams selected vendors using bid pricing and vendor credibility.</dd></div>
+          <div><dt>WHAT I BUILT</dt><dd>Designed and built the trip lifecycle as a state machine, connecting each stage to its required actions: vendor notifications, advance-payment links, waybill registration, and third-party vehicle tracking.</dd></div>
+          <div><dt>WHAT IT ENABLED</dt><dd>A connected workflow from request to trip closure, with explicit stages and automated actions supporting the operations team’s decisions.</dd></div>
+        </dl>
+        <details class="trip-lifecycle">
+          <summary>Explore the trip lifecycle</summary>
+          <p>Stages grouped for clarity; vendor selection remains an operations decision.</p>
+          <ol><li>Transport requested</li><li>Vendor bidding</li><li>Vendor selected &amp; booked</li><li>En route to pickup</li><li>At pickup &amp; loading</li><li>Advance payment confirmed</li><li>Waybill registered</li><li>Dispatched &amp; in transit</li><li>Arrived &amp; unloaded</li><li>Final invoice issued</li><li>Paid &amp; completed</li></ol>
+        </details>
+        <div class="tags"><span>State machines</span><span>Workflow orchestration</span><span>Tracking integrations</span></div>
+      </article>
+      <article class="work-card case-study" aria-labelledby="freight-finance-title">
+        <div class="work-card-top"><span class="icon-box" aria-hidden="true">↔</span><span class="label">PAYMENTS &amp; FINANCIAL WORKFLOWS</span><span class="card-number">09</span></div>
+        <h3 id="freight-finance-title">Connect the movement of goods<br>to the movement of money.</h3>
+        <dl class="case-details">
+          <div><dt>PAYMENT TO OPERATION</dt><dd>Built advance-payment workflows spanning payment-link generation and confirmation processing. Integrated with a third-party Oracle finance workflow, consuming payment-completion events through Amazon Kinesis to automatically move trips to the ready-to-move stage.</dd></div>
+          <div><dt>BOTH SIDES OF THE PAYMENT</dt><dd>Built workflows for client-to-platform receivables and platform-to-vendor payables. Worked across client invoicing and ledgers, invoice disputes, and goods-damage workflows.</dd></div>
+          <div><dt>INVOICE &amp; TAX COMPLIANCE</dt><dd>Implemented government-portal registration for platform-generated invoices and tax-handling workflows, including tax deducted at source (TDS), to support Indian statutory compliance.</dd></div>
+        </dl>
+        <div class="tags"><span>Amazon Kinesis</span><span>Payment events</span><span>Invoicing &amp; ledgers</span></div>
+      </article>
+    </div>
+    <p class="section-note">Professional work is summarized at a high level; internal metrics and customer details are omitted.</p>
+  </section>
+
+  <section class="section projects-section" id="projects" aria-labelledby="projects-title"><div class="wrap">
+    <div class="section-header"><div><p class="eyebrow section-kicker">02 <span>/</span> THE OPEN WORKBENCH</p><h2 id="projects-title">Curiosity, <em>committed.</em></h2></div><a class="text-link" href="https://github.com/mrsouravraj?tab=repositories" target="_blank" rel="noopener">All repositories <span>↗</span></a></div>
+    <div class="project-toolbar"><div class="filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects <span id="project-total">10</span></button><button type="button" data-filter="ai" aria-pressed="false">AI engineering</button><button type="button" data-filter="systems" aria-pressed="false">Systems & data</button></div><span id="project-count" class="label" aria-live="polite">10 projects</span></div>
+    <div class="project-grid">
+      <article class="project-card" data-category="ai"><div class="project-art rag-art" aria-hidden="true"><div class="art-topline"><span>01 / RETRIEVAL SYSTEMS</span><span>↗</span></div><div class="rag-visual"><span class="rag-question">What does the evidence say?</span><div class="rag-stages"><span>Retrieve</span><i>→</i><span>Evaluate</span><i>→</i><span>Ground</span></div><span class="rag-answer">An answer you can trace. <b>✓</b></span></div><span class="art-footnote">RETRIEVAL IS ONLY THE BEGINNING.</span></div><div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/production-rag-lab" target="_blank" rel="noopener">Production RAG Lab</a></h3><span>↗</span></div><p>A failure-driven exploration of production RAG: retrieval strategies, evaluations, citations, and observability, with an interactive playground.</p><div class="project-bottom"><span>Python · RAG · Evaluation</span><span class="repo-label">PUBLIC REPO</span></div></div></article>
+      <article class="project-card" data-category="systems"><div class="project-art database-art" aria-hidden="true"><div class="art-topline"><span>02 / PERFORMANCE ENGINEERING</span><span>↗</span></div><div class="database-visual"><div class="db-axis"><span>THROUGHPUT</span><span>↑</span></div><div class="db-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="db-axis bottom-axis"><span>BATCH · COMMIT · REPEAT</span><span>→</span></div></div><span class="art-footnote">CONCEPTUAL VISUAL / MEASUREMENTS LIVE IN THE REPO</span></div><div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/database-speed-lab" target="_blank" rel="noopener">Database Speed Lab</a></h3><span>↗</span></div><p>SQLite write experiments that unpack batching, transaction costs, and durability. A closer look at what a throughput number actually measures.</p><div class="project-bottom"><span>SQLite · Python · C++</span><span class="repo-label">PUBLIC REPO</span></div></div></article>
+      <article class="project-card" data-category="systems"><div class="project-art ledger-art" aria-hidden="true"><div class="art-topline"><span>03 / FINANCIAL SYSTEMS</span><span>↗</span></div><div class="ledger-visual"><div><span>EVENT LOG</span><span>REPLAY → STATE</span></div><p><span>01</span> Authorize <b>+ hold</b></p><p><span>02</span> Settle <b>− balance</b></p><p><span>03</span> Reconcile <b class="ledger-ok">✓ consistent</b></p></div><span class="art-footnote">CORRECTNESS IS THE FEATURE.</span></div><div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/InMemAccLedgerCore" target="_blank" rel="noopener">In-Memory Ledger Core</a></h3><span>↗</span></div><p>An account ledger exploring event replay, authorization holds, value dates, fee assessments, and interest calculations.</p><div class="project-bottom"><span>Python · Event replay · Testing</span><span class="repo-label">PUBLIC REPO</span></div></div></article>
+      <article class="project-card" data-category="systems"><div class="project-art algorithms-art" aria-hidden="true"><div class="art-topline"><span>04 / DISTRIBUTED ALGORITHMS</span><span>↗</span></div><div class="tree-visual"><div class="tree-root">LEADER / TERM 01</div><div class="tree-branches"><span>FOLLOWER A</span><span>FOLLOWER B</span></div><div class="tree-leaves"><span>01</span><span>02</span><span>03</span><span>04</span></div></div><span class="art-footnote">UNDERSTAND THE PRIMITIVES. BUILD BETTER SYSTEMS.</span></div><div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/raft-consensus" target="_blank" rel="noopener">Raft Consensus Lab</a></h3><span>↗</span></div><p>An educational Raft implementation exploring leader election, log replication, and recovery when nodes or networks fail.</p><div class="project-bottom"><span>Python · Consensus · Failure recovery</span><span class="repo-label">PUBLIC REPO</span></div></div></article>
+      <article class="project-card" data-category="ai">
+        <div class="project-art governance-art" aria-hidden="true"><div class="art-topline"><span>05 / DATA & AI FOUNDATIONS</span><span>↗</span></div><div class="governance-visual"><div><span>01</span><strong>INGEST</strong><small>Validate the contract</small></div><div><span>02</span><strong>GOVERN</strong><small>Scope the access</small></div><div><span>03</span><strong>TRACE</strong><small>Keep the evidence</small></div></div><span class="art-footnote">REFERENCE PATTERNS / EXPLICIT BOUNDARIES</span></div>
+        <div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/meridian" target="_blank" rel="noopener">Meridian</a></h3><span>↗</span></div><p>Reference implementations of ten data and AI engineering patterns: governed ingestion, tenant access, drift detection, feature stores, and lineage. Includes design notes, demos, and tests.</p><div class="project-bottom"><span>Python · Data governance · AI infrastructure</span><span class="repo-label">REFERENCE PROJECT</span></div></div>
+      </article>
+      <article class="project-card" data-category="ai">
+        <div class="project-art agent-art" aria-hidden="true"><div class="art-topline"><span>06 / CODING AGENT INTERNALS</span><span>↗</span></div><div class="agent-visual"><div class="agent-window-label"><span>agent_loop.py</span><span>LEARNING LAB</span></div><div><span>01</span> Read the context</div><div><span>02</span> Choose and call a tool</div><div><span>03</span> Observe the result <b>↺</b></div></div><span class="art-footnote">CONTEXT → ACTION → FEEDBACK</span></div>
+        <div class="project-copy"><div class="project-title"><h3><a href="https://github.com/mrsouravraj/claude-code-from-scratch" target="_blank" rel="noopener">Coding Agent from Scratch</a></h3><span>↗</span></div><p>An educational coding-agent implementation using the Anthropic API. Explores tool dispatch, persistent tasks, context compaction, and permission checks through incremental examples.</p><div class="project-bottom"><span>Python · Tool use · Context management</span><span class="repo-label">LEARNING PROJECT</span></div></div>
+      </article>
+    </div>
+    <section class="project-experiments" data-project-collection aria-labelledby="experiments-title">
+      <div class="experiments-heading"><div><p class="label">A CLOSER LOOK AT THE BUILDING BLOCKS</p><h3 id="experiments-title">More systems experiments.</h3></div><p>Focused implementations for learning how the pieces work.</p></div>
+      <div class="experiment-grid">
+        <a class="experiment-card" data-category="systems" href="https://github.com/mrsouravraj/FastAPICeleryAIOPool" target="_blank" rel="noopener"><div class="experiment-top"><span class="label">ASYNC PROCESSING</span><span aria-hidden="true">↗</span></div><h4>FastAPI + Celery Async Lab</h4><p>Explores concurrent I/O inside Celery tasks, with HTTP requests, async database access, and worker connection lifecycles.</p><span class="experiment-tech">FastAPI · Celery · asyncio</span></a>
+        <a class="experiment-card" data-category="systems" href="https://github.com/mrsouravraj/distributed-hash-tables" target="_blank" rel="noopener"><div class="experiment-top"><span class="label">DISTRIBUTED LOOKUPS</span><span aria-hidden="true">↗</span></div><h4>Distributed Hash Tables</h4><p>Educational simulations of Chord routing, key placement, and node membership, with lookup and failure-scenario tests.</p><span class="experiment-tech">Python · Chord · Routing</span></a>
+        <a class="experiment-card" data-category="systems" href="https://github.com/mrsouravraj/merkle-trees" target="_blank" rel="noopener"><div class="experiment-top"><span class="label">DATA INTEGRITY</span><span aria-hidden="true">↗</span></div><h4>Merkle Trees</h4><p>Tree construction, proof generation, and verification in Python, with examples exploring data integrity and replica synchronization.</p><span class="experiment-tech">Python · Hashing · Verification</span></a>
+        <a class="experiment-card" data-category="systems" href="https://github.com/mrsouravraj/PyRedisConsole" target="_blank" rel="noopener"><div class="experiment-top"><span class="label">PROTOCOLS & TOOLING</span><span aria-hidden="true">↗</span></div><h4>Redis CLI from Scratch</h4><p>A learning project implementing a Redis client over TCP, with RESP parsing, command completion, and inline syntax hints.</p><span class="experiment-tech">Python · TCP sockets · RESP</span></a>
+      </div>
+    </section>
+  </div></section>
+
+  <section class="section wrap" id="experience" aria-labelledby="experience-title"><div class="section-header"><div><p class="eyebrow section-kicker">03 <span>/</span> THE JOURNEY SO FAR</p><h2 id="experience-title">Growing with <em>the problem.</em></h2></div><a class="text-link" href="assets/Sourav-Chourasia-Resume-Public.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a></div>
+    <div class="timeline"><article class="timeline-row"><div class="timeline-date">JUL 2023 — PRESENT<span>Abu Dhabi, UAE</span><span class="current-badge">CURRENT</span></div><div class="timeline-body"><div class="role-heading"><h3>SDE III / Lead Backend Engineer</h3><span>Innovaccer</span></div><p>Leading backend architecture and delivery for multi-tenant healthcare platforms. Led backend modernization and configuration-driven design to improve responsiveness, infrastructure efficiency, and delivery speed.</p>
+      <ul class="role-impact">
+        <li><strong>Architectural guidance.</strong> Reviewed evolving integration designs, identified compatibility risks, and guided peers toward solutions that preserved clear service boundaries.</li>
+        <li><strong>Operational ownership.</strong> Prioritized and delegated production issues, coordinated resolution against service commitments, and kept stakeholders informed. Contributed to cross-team incident response, logging, and tracing improvements.</li>
+        <li><strong>Team enablement.</strong> Led knowledge sharing on AI tooling and generated API documentation, reinforced linting and coverage checks, and resolved dependencies to keep delivery moving through handoffs.</li>
+      </ul><div class="tags"><span>Architecture</span><span>Distributed systems</span><span>Applied AI</span><span>Mentoring</span></div></div></article><article class="timeline-row"><div class="timeline-date">JUN 2021 — JUN 2023<span>Noida, India</span></div><div class="timeline-body"><div class="role-heading"><h3>Software Development Engineer II</h3><span>Innovaccer</span></div><p>Built Python and Django services for care management: shared worklists, eligibility, and care plans. Developed Chronic Care Management workflows to capture care-delivery time and support hospital billing. Owned features from requirements through production releases.</p><div class="tags"><span>Python</span><span>Django</span><span>REST APIs</span><span>Healthcare</span></div></div></article><article class="timeline-row"><div class="timeline-date">FEB 2020 — JUN 2021<span>Goa, India</span></div><div class="timeline-body"><div class="role-heading"><h3>Developer Engineer</h3><span>Delhivery</span></div><p>Built backend workflows for a freight marketplace connecting transport requests with truck vendors. Designed and implemented the trip lifecycle as a state machine, spanning bidding and booking through pickup, delivery, invoicing, and closure.</p>
+      <ul class="role-impact">
+        <li><strong>Trip orchestration.</strong> Connected vendor notifications and bidding to operations-led selection, loading, waybill registration, and third-party vehicle tracking. Enabled UI-managed business rules and permissions through an action-based architecture.</li>
+        <li><strong>Payment-driven transitions.</strong> Built advance-payment link generation and consumed payment confirmations through Amazon Kinesis to automatically advance trips to the ready-to-move stage.</li>
+        <li><strong>Financial operations.</strong> Built client-to-platform receivables and platform-to-vendor payables workflows. Worked across client invoicing and ledgers, disputes, goods-damage workflows, and proof-of-delivery integrations.</li>
+        <li><strong>Invoice and tax compliance.</strong> Implemented government-portal registration for platform-generated invoices and TDS handling to support Indian statutory compliance.</li>
+      </ul><div class="tags" aria-label="Delhivery technology stack"><span>Python</span><span>AWS / Lambda</span><span>DynamoDB</span><span>Elasticsearch</span><span>Kafka</span><span>Amazon Kinesis</span><span>AWS Glue</span><span>Amazon Athena</span><span>Oracle integrations</span></div></div></article></div>
+    <article class="early-project" aria-labelledby="early-project-title">
+      <div class="early-project-meta"><span class="label">AN EARLY EXPLORATION</span><span class="early-project-year">2019</span><span>JUL — DEC · ACADEMIC PROJECT</span></div>
+      <div class="early-project-copy"><h3 id="early-project-title">Deep learning, before the day job.</h3><p>Explored multi-label classification of chest X-ray images across 14 disease categories in an academic project. An early intersection of my interests in machine learning and healthcare.</p><div class="tags"><span>Deep learning</span><span>Image classification</span><span>Healthcare research</span></div></div>
+    </article>
+    <div class="recognition"><div><span class="label">THE FOUNDATION</span><strong>B.Tech, Computer Science</strong><p>Lovely Professional University · 2020<br>CGPA 8.99 / 10</p></div><div><span class="label">ALONG THE WAY</span><strong>Innovaccer Champion Award ×3</strong><p>2021 · 2023 · 2025</p></div><div><span class="label">WHERE IT STARTED</span><strong>ACM ICPC Asia Regionalist</strong><p>Gwalior–Pune · 2019<br>CodeChef 4-star rating achieved in 2019</p></div><div><span class="label">ALGORITHMIC ROOTS</span><strong>InterviewBit Academy · First cohort</strong><p>Selected among the top 300 of 10,000 applicants · 2019</p></div></div>
+  </section>
+
+  <section class="section writing-section" id="writing" aria-labelledby="writing-title"><div class="wrap"><div class="section-header"><div><p class="eyebrow section-kicker">04 <span>/</span> NOTES FROM THE FIELD</p><h2 id="writing-title">Learn it. Build it. <em>Write it down.</em></h2></div><a class="text-link" href="https://medium.com/@mr.sourav.raj" target="_blank" rel="noopener">Read on Medium <span>↗</span></a></div><p class="writing-intro">Working notes on Python, distributed systems, and the changing craft of engineering.</p>
+    <div id="articles-list" class="articles-list">
+      <!-- ARTICLES:START -->
+<a class="article-row" href="https://blog.stackademic.com/from-77-writes-to-one-million-events-per-second-my-sqlite-speed-experiment-fc802b2eaee0?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">01</span><div><h3>From 77 Writes to One Million Events per Second: My SQLite Speed Experiment</h3><p>Software Engineering · Performance Optimization · Sqlite</p></div><time datetime="2026-10-24">Oct 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+<a class="article-row" href="https://blog.stackademic.com/your-payment-succeeded-so-why-does-one-service-think-it-failed-434e572ef0e0?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">02</span><div><h3>Your Payment Succeeded. So Why Does One Service Think It Failed?</h3><p>Payments · Financial System · Lamport Timestamps</p></div><time datetime="2026-10-19">Oct 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+<a class="article-row" href="https://ai.plainenglish.io/beyond-vector-search-how-to-build-rag-systems-that-actually-work-in-production-2113b46436df?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">03</span><div><h3>Beyond Vector Search: How to Build RAG Systems That Actually Work in Production</h3><p>Generative Ai Use Cases · Llm · Artificial Intelligence</p></div><time datetime="2026-09-01">Sep 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+<a class="article-row" href="https://ai.plainenglish.io/how-i-stopped-burning-claude-tokens-a-developers-field-report-using-headroom-with-claude-code-6cccbbf135e5?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">04</span><div><h3>How I Stopped Burning Claude Tokens: A Developer’s Field Report Using Headroom with Claude Code</h3><p>Productivity · Claude Code · Programming</p></div><time datetime="2026-07-19">Jul 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+<a class="article-row" href="https://blog.stackademic.com/from-senior-engineer-to-ai-conductor-how-the-role-actually-changes-083052e7c842?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">05</span><div><h3>From Senior Engineer to AI Conductor: How the Role Actually Changes</h3><p>Ai For Developers · Ai Coding · Developer Tools</p></div><time datetime="2026-03-20">Mar 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+<a class="article-row" href="https://blog.stackademic.com/kiro-vs-cursor-vs-antigravity-vs-claude-code-which-ai-ide-belongs-in-your-workflow-f670d3d6ef89?source=rss-d2600d066eef------2" target="_blank" rel="noopener"><span class="article-number">06</span><div><h3>Kiro vs Cursor vs Antigravity vs Claude Code: Which AI IDE Belongs in Your Workflow?</h3><p>Developer Tools · Ai Tools · Software Engineering</p></div><time datetime="2026-03-14">Mar 2026</time><span class="article-arrow" aria-hidden="true">↗</span></a>
+      <!-- ARTICLES:END -->
+    </div>
+    <p class="writing-footer">More ideas, experiments, and deep dives on <a href="https://medium.com/@mr.sourav.raj" target="_blank" rel="noopener">@mr.sourav.raj ↗</a></p>
+  </div></section>
+
+  <section class="section wrap" id="about" aria-labelledby="about-title"><div class="about-grid"><div><p class="eyebrow section-kicker">05 <span>/</span> A LITTLE ABOUT ME</p><h2 id="about-title">An engineer.<br>A builder.<br><em>Still a student.</em></h2><div class="about-location"><span class="status-dot"></span> BASED IN ABU DHABI, UAE</div></div><div class="about-copy"><p class="about-lead">I like understanding how things work.<br>Especially when they stop working.</p><p>My foundation is in backend engineering: APIs, data contracts, concurrency, and the less glamorous details that make ambitious software possible. Working in healthcare has taught me to care about the people at the other end of a system.</p><p>These days, I bring that same thinking to AI workflows and developer tools. Outside work, I explore database internals, implement algorithms, and write about what I learn.</p><p>Away from the keyboard, I enjoy cricket, music, and singing.</p><div class="principle"><span>MY DEFAULT SETTING</span><blockquote>“Be curious about the possibilities.<br>Be rigorous about the failure modes.”</blockquote></div></div></div>
+    <div class="skills"><div><span class="label">BACKEND & SYSTEMS</span><p>Python / FastAPI / Django<br>REST APIs / Event-driven design</p></div><div><span class="label">DATA & MESSAGING</span><p>PostgreSQL / Redis / MongoDB<br>Kafka / Celery / Kinesis</p></div><div><span class="label">AI ENGINEERING</span><p>LLM APIs / RAG / Tool calling<br>Evaluation / Human review</p></div><div><span class="label">CLOUD & DELIVERY</span><p>AWS / Azure / Kubernetes<br>Docker / Helm / ArgoCD</p></div></div>
+  </section>
+  <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><p class="eyebrow"><span class="status-dot"></span> THE NEXT GOOD CONVERSATION</p><h2 id="contact-title">Hard problem?<br><em>Let’s think it through.</em></h2><p>Systems, software, or an idea worth building.<br>I’m always happy to talk engineering.</p><a class="contact-email" href="mailto:mr.sourav.raj@gmail.com">mr.sourav.raj@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://github.com/mrsouravraj" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/souravchaurasia/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://medium.com/@mr.sourav.raj" target="_blank" rel="noopener">Medium ↗</a></div></div></section>
+</main>
+<footer class="wrap footer"><a class="brand" href="#home"><span class="brand-icon" aria-hidden="true">&lt;/&gt;</span><span>Sourav Chourasia<span class="brand-period">.</span></span></a><span>© <span id="year">2026</span> · Built with curiosity and care.</span><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
